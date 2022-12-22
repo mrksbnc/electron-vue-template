@@ -13,7 +13,7 @@ async function createWindow(): Promise<BrowserWindow> {
 
   window.on('ready-to-show', () => {
     window.show();
-    if (import.meta.env.DEV) window?.webContents.openDevTools();
+    if (import.meta.env.DEV) window.webContents.openDevTools();
   });
 
   const pageUrl =
