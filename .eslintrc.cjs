@@ -7,6 +7,10 @@ module.exports = {
   env: {
     'shared-node-browser': true,
   },
+  globals: {
+    window: true,
+    module: true,
+  },
   extends: [
     'prettier',
     'eslint:recommended',
@@ -14,10 +18,15 @@ module.exports = {
     '@vue/eslint-config-typescript',
   ],
   parserOptions: {
+    sourceType: 'module',
     ecmaVersion: 'latest',
   },
   ignorePatterns: ['node_modules', 'dist'],
   rules: {
     'no-undef': 'off',
+    'prefer-const': 'error',
+    'vue/html-self-closing': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/multi-word-component-names': 'off',
   },
 };
