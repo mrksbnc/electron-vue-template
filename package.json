@@ -37,6 +37,7 @@
     "electron": "^22.0.0",
     "electron-builder": "^23.6.0",
     "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.8.0",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
