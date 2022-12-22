@@ -10,6 +10,7 @@ module.exports = {
   globals: {
     window: true,
     module: true,
+    process: true,
   },
   extends: [
     'prettier',
