@@ -12,10 +12,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@main/*": ["../main/src/*"],
       "@types/*": ["../../types/*"],
-      "@main/*": ["../../main/src/*"],
-      "@renderer/*": ["../../renderer/src/*"],
-      "@preload/*": ["../../preload/src/*"]
+      "@preload/*": ["../preload/src/*"],
+      "@renderer/*": ["../renderer/src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "../../types/**/*.d.ts"],

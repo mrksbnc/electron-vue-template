@@ -13,9 +13,9 @@
     "paths": {
       "@/*": ["src/*"],
       "@types/*": ["../../types/*"],
-      "@main/*": ["../../main/src/*"],
-      "@shared/*": ["../../shared/src/*"],
-      "@renderer/*": ["../../renderer/src/*"]
+      "@main/*": ["../main/src/*"],
+      "@shared/*": ["../shared/src/*"],
+      "@renderer/*": ["../renderer/src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "../../types/**/*.d.ts"],

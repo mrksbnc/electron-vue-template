@@ -15,10 +15,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@main/*": ["../main/src/*"],
       "@types/*": ["../../types/*"],
-      "@main/*": ["../../main/src/*"],
-      "@shared/*": ["../../shared/src/*"],
-      "@preload/*": ["../../preload/src/*"]
+      "@shared/*": ["../shared/src/*"],
+      "@preload/*": ["../preload/src/*"]
     }
   },
   "include": [

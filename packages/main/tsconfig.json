@@ -13,9 +13,9 @@
     "paths": {
       "@/*": ["src/*"],
       "@types/*": ["../../types/*"],
-      "@shared/*": ["../../shared/src/*"],
-      "@preload/*": ["../../preload/src/*"],
-      "@renderer/*": ["../../renderer/src/*"]
+      "@shared/*": ["../shared/src/*"],
+      "@preload/*": ["../preload/src/*"],
+      "@renderer/*": ["../renderer/src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "../../types/**/*.ts", "../../types/**/*.d.ts"],
