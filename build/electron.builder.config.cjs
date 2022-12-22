@@ -12,7 +12,7 @@ module.exports = {
   },
   asar: true,
   compression: 'maximum',
-  appId: 'com.mrksbnc.electron-vite-starter',
+  appId: 'com.mrksbnc.electron-vue-template',
   files: ['packages/**/dist/**'],
   buildDependenciesFromSource: true,
   mac: {
