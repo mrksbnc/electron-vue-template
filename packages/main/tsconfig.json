@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@types/*": ["../../types/*"],
+      "@shared/*": ["../../shared/src/*"],
+      "@preload/*": ["../../preload/src/*"],
+      "@renderer/*": ["../../renderer/src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "../../types/**/*.ts", "../../types/**/*.d.ts"],
+  "references": [{ "path": "../../tsconfig.node.json" }]
+}
