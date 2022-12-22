@@ -1,5 +1,5 @@
-import { app } from "electron";
-import restoreOrCreateWindow from "./window";
+import { app } from 'electron';
+import restoreOrCreateWindow from './window';
 
 function requestSingleInstance(): void {
   const isSingleInstance = app.requestSingleInstanceLock();
@@ -12,10 +12,10 @@ function requestSingleInstance(): void {
 export async function init(): Promise<void> {
   requestSingleInstance();
   app.disableHardwareAcceleration();
-  app.on("second-instance", restoreOrCreateWindow);
-  app.on("activate", restoreOrCreateWindow);
-  app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") app.quit();
+  app.on('second-instance', restoreOrCreateWindow);
+  app.on('activate', restoreOrCreateWindow);
+  app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') app.quit();
   });
 
   app
@@ -26,7 +26,7 @@ export async function init(): Promise<void> {
   if (import.meta.env.PROD)
     app
       .whenReady()
-      .then(() => import("electron-updater"))
+      .then(() => import('electron-updater'))
       .then(({ autoUpdater }) => autoUpdater.checkForUpdatesAndNotify())
-      .catch((e) => console.error("Failed check updates:", e));
+      .catch((e) => console.error('Failed check updates:', e));
 }

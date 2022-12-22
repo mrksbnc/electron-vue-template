@@ -1,5 +1,5 @@
-import { join } from "path";
-import { BrowserWindow } from "electron";
+import { join } from 'path';
+import { BrowserWindow } from 'electron';
 
 async function createWindow(): Promise<BrowserWindow> {
   const window = new BrowserWindow({
@@ -7,11 +7,11 @@ async function createWindow(): Promise<BrowserWindow> {
     center: true,
     webPreferences: {
       webviewTag: false,
-      preload: join(__dirname, "../../preload/dist/index.cjs"),
+      preload: join(__dirname, '../../preload/dist/index.cjs'),
     },
   });
 
-  window.on("ready-to-show", () => {
+  window.on('ready-to-show', () => {
     window.show();
     if (import.meta.env.DEV) window?.webContents.openDevTools();
   });
@@ -19,10 +19,7 @@ async function createWindow(): Promise<BrowserWindow> {
   const pageUrl =
     import.meta.env.DEV && import.meta.env.VITE_DEV_SERVER_URL !== undefined
       ? import.meta.env.VITE_DEV_SERVER_URL
-      : new URL(
-          "../renderer/dist/index.html",
-          "file://" + __dirname
-        ).toString();
+      : new URL('../renderer/dist/index.html', 'file://' + __dirname).toString();
 
   await window.loadURL(pageUrl);
   return window;
