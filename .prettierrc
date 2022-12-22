@@ -6,5 +6,6 @@
   "bracketSpacing": true,
   "trailingComma": "es5",
   "arrowParens": "always",
+  "singleAttributePerLine": true,
   "vueIndentScriptAndStyle": true
 }
