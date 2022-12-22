@@ -1,5 +1,5 @@
-declare global {
-  interface Window {
-    // Add your properties here
-  }
+interface CustomWindow extends Window {
+  // Add your custom properties here
 }
+
+declare let window: CustomWindow;
