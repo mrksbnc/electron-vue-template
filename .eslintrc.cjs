@@ -8,7 +8,6 @@ module.exports = {
     'shared-node-browser': true,
   },
   globals: {
-    window: 'writeable',
     module: true,
     process: true,
   },
