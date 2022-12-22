@@ -7,7 +7,6 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "./json/**/*.json",
     "packages/main/vite.config.ts",
     "packages/shared/vite.config.ts",
     "packages/preload/vite.config.ts",
